@@ -9,10 +9,6 @@ function App(){
       isCompleted: false,
     },
     {
-      text: 'read chapter of book',
-      isCompleted: false,
-    },
-    {
       text: 'build todo app',
       isCompleted: false,
     }        
@@ -26,9 +22,15 @@ function App(){
       setTodos(newTodos);
       setValue('');
   }
+  const removeTodo = e => {
+    const index = Number(e.target.id);
+    let temp = [...todos];
+    temp.splice(index,1);
+    setTodos(temp);
+  }
   return (<>
       {todos.map((todo, i) => 
-        <div className= "todo" key={i}>{todo.text}</div>)}
+        <div className= "todo" key={i} id={i} onClick={removeTodo}>{todo.text}</div>)}
       <form onSubmit={handleSumbit}>
           <input
             type="text"
