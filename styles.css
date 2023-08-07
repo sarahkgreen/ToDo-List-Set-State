@@ -10,20 +10,20 @@ body {
   }
   
   .app {
-    background: #209cee;
+    background: #9B5FB4;
     padding: 30px;
     height: 100vh;
   }
   
   .todo-list{
-    background: #e8e8e8;
+    background: #E89BD9;
     border-radius: 4px;
     padding: 5px;
     max-width: 400px;
   }
   
   .todo{
-    background: #fff;
+    background: #CAFCDF;
     box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
     padding: 3px 10px;
     font-size: 24px;
